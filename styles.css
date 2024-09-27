@@ -1,0 +1,214 @@
+/* Color Palette */
+:root {
+    --color-primary: #313e50;
+    --color-secondary: #3a435e;
+    --color-tertiary: #455561;
+    --color-quaternary: #5c6672;
+    --color-quinary: #6c6f7f;
+    --color-text: #ffffff;
+    --color-background: #313e50;
+    --color-button: #5c6672;
+    --color-button-hover: #455561;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image:url(image\ mov.jpg) ;
+    
+    }
+
+header {
+    background-color: var(--color-secondary);
+    padding: 10px 0;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: color-burn;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex: left;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-quinary);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+section.active {
+    display: block;
+    opacity: 1;
+}
+
+.form-container {
+    background-color: var(--color-tertiary);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--color-quaternary);
+    
+    color:#455561;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-button);
+    color: var(--color-text);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-button-hover);
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #455561;
+}
+
+.search-container input {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: #313e50;
+}
+
+.main-container {
+    display: flex;
+    padding: 20px;
+}
+
+.pie-chart-container {
+    width: 60%;
+    height: 30%;
+    padding: 20px;
+    background-color: #5c6672;
+    border-radius: 10px;
+}
+
+.chatbox-container {
+    width: 35%;
+    margin-left: 5%;
+    padding: 20px;
+    background-color: #6c6f7f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbox-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: #455561;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.chat-window {
+    flex-grow: 1;
+    padding: 10px;
+    background-color: #313e50;
+    overflow-y: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #5c686f;
+}
+
+#chatForm {
+    display: flex;
+}
+
+#chatInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#chatForm button {
+    padding: 10px 20px;
+    background-color: #3a435e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chatForm button:hover {
+    background-color: #313e50;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    padding: 10px 0;
+    text-align: center;
+    color: var(--color-text);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+#home {
+ background-image:cross-fade();
+}
